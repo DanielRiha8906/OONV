@@ -4,5 +4,5 @@ Assignments are [Here](https://github.com/pavelberanek91/UJEP/tree/main/OONV)
 | Name of Project       | Status |
 | --------------------- | ------ |
 | P_2 - Generalization  |   ✅   |
-| P_3 - Simple RPG      | 🔴     |
+| P_3 - Simple RPG      | :x:    |
 | P_4 - OOP Design      | ✅     |
