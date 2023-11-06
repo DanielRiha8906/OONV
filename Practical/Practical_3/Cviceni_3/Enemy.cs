@@ -20,8 +20,9 @@ namespace Shitty_RPG
         {
             this.DV_current = this.DV;
         }
-       public void Get_hit(int damage)
-        {   Console.WriteLine(damage);
+        public void Get_hit(int damage)
+        {
+            Console.WriteLine(damage);
             if (this.DV_current >= damage)
             {
                 Console.WriteLine("Ding, this dealt 0 damage");
@@ -29,7 +30,7 @@ namespace Shitty_RPG
             else
             {
                 Console.WriteLine("You got hit for " + (damage) + " damage");
-                this.HP_current += (this.DV_current- damage);
+                this.HP_current += (this.DV_current - damage);
             }
             if (this.HP_current <= 0)
             {

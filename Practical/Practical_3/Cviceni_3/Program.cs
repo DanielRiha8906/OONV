@@ -1,5 +1,4 @@
-﻿using System.Net;
-
+﻿// c:/Users/danie/Desktop/Škola - kódy/OONV/Practical/Practical_3/Cviceni_3/Program.cs
 namespace Shitty_RPG
 {
     class Program

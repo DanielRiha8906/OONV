@@ -39,7 +39,7 @@ namespace Shitty_RPG
             else
             {
                 Console.WriteLine("You got hit for " + (damage) + " damage");
-                this.HP_current += (this.DV_current- damage);
+                this.HP_current += (this.DV_current - damage);
             }
             if (this.HP_current <= 0)
             {
@@ -68,10 +68,7 @@ namespace Shitty_RPG
                 HP_current = HP_max;
             }
         }
-        public void Use_Special_Ability()
-        {
-            Console.WriteLine("Speical abilites TBD");
-        }
+
         public void Turn(Hero hero, Enemy enemy)
         {
             Console.WriteLine("What Would you like to do? Would you Like to ATTACK(0), DEFEND(1), REGENERATE(2), USE SPECIAL ABILITY(3), ");
@@ -85,9 +82,6 @@ namespace Shitty_RPG
                     break;
                 case "2":
                     this.Regenerate();
-                    break;
-                case "3":
-                    this.Use_Special_Ability();
                     break;
                 default:
                     Console.WriteLine("By choosing an invalid option, you have forfeited your turn");

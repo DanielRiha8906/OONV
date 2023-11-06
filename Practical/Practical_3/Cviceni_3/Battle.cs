@@ -9,7 +9,7 @@ namespace Shitty_RPG
             this.Hero = hero;
             this.Enemy = enemy;
         }
-        public void Squad_battle(Hero Hero,Enemy Enemy)
+        public void Squad_battle(Hero Hero, Enemy Enemy)
         {
             Console.WriteLine("No clue what to do here, TBD");
         }
@@ -18,18 +18,16 @@ namespace Shitty_RPG
             if (hero.Initiative > enemy.Initiative)
             {
                 while (hero.HP_current > 0 && enemy.HP_current > 0)
-                {   Console.WriteLine("Another round starts");
+                {
+                    Console.WriteLine("Another round starts");
                     hero.Turn(hero, enemy);
-                    hero.Get_hp();
-                    enemy.Get_hp();
-
-                    if(hero.HP_current <=0 || enemy.HP_current <= 0)
+                    if (hero.HP_current <= 0 || enemy.HP_current <= 0)
                     {
                         Console.WriteLine("Problem je v ifu numero uno");
                         break;
                     }
                     enemy.Turn(enemy, hero);
-                    if(hero.HP_current <=0 || enemy.HP_current <= 0)
+                    if (hero.HP_current <= 0 || enemy.HP_current <= 0)
                     {
                         break;
                     }
@@ -43,7 +41,7 @@ namespace Shitty_RPG
                 while (hero.HP_current > 0 && enemy.HP_current > 0)
                 {
                     enemy.Turn(enemy, hero);
-                    if(hero.HP_current <=0 || enemy.HP_current <= 0)
+                    if (hero.HP_current <= 0 || enemy.HP_current <= 0)
                     {
                         break;
                     }
